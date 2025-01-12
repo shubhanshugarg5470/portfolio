@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: #fff;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            color: #ffe082;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 1.1rem;
+            transition: color 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            color: #fff;
+            transform: scale(1.1);
+        }
+        section {
+            text-align: center;
+            padding: 3rem 2rem;
+            margin: 2rem auto;
+            max-width: 900px;
+            border-radius: 12px;
+            background: linear-gradient(to bottom, #fff, #f7e8ff);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+        .hero {
+            background: linear-gradient(to right, #ff6a88, #ff99ac);
+            color: #fff;
+        }
+        .hero h1 {
+            margin: 0.5rem 0;
+            font-size: 2.5rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        #about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 1rem;
+            transition: transform 0.3s ease-in-out;
+        }
+        #about img:hover {
+            transform: scale(1.1) rotate(10deg);
+        }
+        #projects ul {
+            list-style: none;
+            padding: 0;
+        }
+        #projects li {
+            margin: 0.5rem 0;
+        }
+        #projects a {
+            color: #4a148c;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+        #projects a:hover {
+            color: #ff4081;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background: linear-gradient(to left, #4facfe, #00f2fe);
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+        footer p {
+            margin: 0;
+        }
+        .button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            margin: 1rem;
+            font-size: 1rem;
+            color: #fff;
+            background: #4facfe;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .button:hover {
+            background: #00f2fe;
+            transform: scale(1.05);
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const aboutLink = document.querySelector("a[href='#about']");
+            aboutLink.addEventListener("click", (e) => {
+                e.preventDefault();
+                window.location.href = "about.html";
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <section id="about" class="hero">
+        <h1>About Me</h1>
+        <p>Hi! I'm Shubhanshu Garg, a full-stack web developer with a love for creating amazing web experiences.</p>
+        <img src="C:\Users\hp\Pictures\Camera Roll\IMG_20230507_182853 (2).jpg" alt="IMG_20230507_182853 (2)">
+    </section>
+    
+    <section id="projects">
+        <h1>My Projects</h1>
+        <p>Check out some of my work below:</p>
+        <ul>
+            <li><a href="#">Project 1</a></li>
+            <li><a href="#">Project 2</a></li>
+            <li><a href="#">Project 3</a></li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <p>Feel free to reach out to me for collaborations or just to say hi!</p>
+        <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
